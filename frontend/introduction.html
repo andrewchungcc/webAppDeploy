@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="introduction.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+
+    <title>Introduction</title>
+    <!-- Include jquery -->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <!-- Include js -->
+    <script defer src='./introduction.js'></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+      integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+
+    </script>
+</head>
+
+<body>
+    <div class="up">
+        <a href="./homepage.html">
+        <img src="./image/Logo_2.png" class="logo">
+        </a>
+
+        <div class="up_right">
+            <div class="pageicon-container">
+                <!--<a href="./Login.html"><img src="./image/loginpage.png"  class="pageicon"></a>-->
+                
+                <button id="home-btn" class="circle-btn"><i class="fas fa-home"></i></button>
+               
+                <button id="favorite-btn" class="circle-btn"><i class="fas fa-heart"></i></button>
+
+                <button id="user-btn" class="circle-btn"><i class="fas fa-user"></i></button>
+                
+                <button id="logout-btn" class="circle-btn"><i class="fas fa-door-open"></i></button>        
+            </div>
+            <!-- <label class="search"><input type="text"></label> -->
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="text">
+            <h1 id = "bookName"></h1>              
+            <span id = "author">作者：</span></br>
+            <span id = "translator">譯者：</span></br>
+            <span id = "painter">繪者：</span></br>
+            <span id = "publisher">出版社：</span></br>
+            <span id = "publish_date">出版日期：</span></br>
+            <p id = "introduction"> </p></br>
+
+        </div>
+
+        <div class="image">
+            
+            <img id="coverImage" class="cover" style="width:400px; height: 450px; "></br>
+            <div style =" display: flex; justify-content: center;" >
+                <!-- 類別 -->
+                <span id = "category" class = "inf"></span>
+                <button id = "addFavoriteButton" class = circle-btn2 ><i class="fas fa-heart"></i></button>
+                <!-- <span id = "addFavoriteButton"><img src="./image/addfavorite.png"></span> -->
+                <span id = "times" class = "inf">瀏覽次數: </span>
+            </div>
+            <br><br>
+            <!-- 目前以超連結暫時代替 -->
+            <button id = "StartReadingButton"> Start Reading </button>
+        </div>
+        
+        <div style="clear:both;"></div>
+        
+    </div>
+    
+</body>
+</html>

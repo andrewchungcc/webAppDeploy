@@ -1,0 +1,191 @@
+body {
+  font-family: Bookman, URW Bookman L, serif;
+  color:#003C9D;
+  background-image: url("./image/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.up{
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  width: 1280px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 410px;
+  height: auto;
+}
+
+.up_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto; 
+}
+
+.pageicon-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.pageicon {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.search {
+  position: relative;
+  bottom: 30px;
+  right: 10px;
+}
+
+.search:before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f002";
+  font-size: 22px;
+  position: relative;
+  left: 25pt;
+  top: 3pt;
+  /* transform: translateY(-50%);  */
+}
+
+input[type="text"] {
+  /* position: relative; */
+  width: 300px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  padding: 10px;
+  border : solid .1px black;
+  border-radius: 20px;
+  background-color :  #fff;
+  }
+
+.content {
+  background-color: white;
+  margin: 0 auto;
+  padding: 5px 20px;
+  max-width: 80%;
+  max-width: 1250px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 30px;
+  /* color: #6495ED; */
+  /*font-family: 'Microsoft JhengHei', sans-serif;*/
+}
+
+p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Microsoft JhengHei', sans-serif;
+  text-align: left;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  width: 600px;
+}
+
+.text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.text-box {
+  flex: 0 0 55%; /* 调整文字和按钮所占的宽度，这里占 55% */
+  height: 288px; /* 容器高度 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 文字和按钮在容器中垂直分布 */
+  align-items: flex-start; /* 文字和按钮左对齐 */
+}
+
+.text-box p {
+  margin-bottom: 10px; /* 添加一些底部边距，使按钮不会紧贴文字 */
+  align-items: baseline;
+  height: 100%;
+  margin-top: 0px;
+}
+
+.favorite-book {
+  flex: 0 0 40%; /* 调整图片所占的宽度，这里占 40% */
+}
+
+.favorite-image {
+  max-width: 90%;
+  height:auto;
+}
+
+.button-container {
+  display: flex;
+  height: 50%;
+}
+
+.read-btn, .delete-btn {
+  margin-top: 10px; /* 保留上方边距 */
+  margin-right: 20px; /* 可以调整按钮之间的间距 */
+  display: inline-block; /* 使按钮在水平方向上排列 */
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+
+#memberID {
+  color: white;
+  font-size: 22px;
+  font-family: 'Microsoft JhengHei', sans-serif;
+  margin: 5px 5px 0 0;
+}
+
+.circle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px
+}
+
+.circle-btn i {
+  font-size: 25px; /* Adjust the font size as needed */
+}
+
+
+.circle-btn:hover {
+  background-color: black;
+  color: white
+}
+
+a {
+  text-decoration: none; /* 去除超連結的底線 */
+}

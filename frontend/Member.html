@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Member</title>
+    
+
+    <!-- Include jquery -->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src='./Member.js'></script>
+
+    <!-- Include SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+      integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <!-- 加入Css格式 -->
+    <link rel = "stylesheet" href = "Member.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <!--最佳化螢幕寬度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    
+</head>
+<body>
+  
+  <div class="up">
+    <a href="./homepage.html">
+    <img src="./image/Logo_2.png" class="logo">
+    </a>
+    
+    <div class="up_right">
+        <div class="pageicon-container">
+          <button id="home-btn" class="circle-btn"><i class="fas fa-home"></i></button>
+
+          <button id="favorite-btn" class="circle-btn"><i class="fas fa-heart"></i></button>
+
+          <button id="logout-btn" class="circle-btn"><i class="fas fa-door-open"></i></button> 
+        </div>
+    </div>
+  </div>
+
+<div class="content">   
+
+  <div class = "memberBox">
+    <!-- <hr class="hr-space-square">  -->
+    <p class = "head">Member Center</p>
+    <p class = "greeting"> Hello! How are You?</p>
+
+    <p> Name </p>
+    <!--<input type="text" id="user_id" autofocus placeholder="">-->
+    <table>
+      <td class="icon"><i class='fas fa-keyboard'></i></td>
+      <td><span id="user_id"></span></td>
+    </table>
+
+    <p> Email </p>
+    <!--<input type="text" id="email" placeholder="">-->
+    <table>
+      <td class="icon"><i class='fas fa-envelope'></i></td>
+      <td><span id="email"></span></td>
+    </table>
+
+    <p> Account </p>
+    <!--<input type="text" id="account" placeholder="">-->
+    <table>
+      <td class="icon"><i class='fas fa-user'></i></td>
+      <td><span id="account"></span></td>
+    </table>
+
+    <p> Credit Card Number </p>
+    <!--<input type="text" id="creditCard_num" placeholder="Please enter 16 digits number">-->
+    <table>
+      <td class="icon"><i class='fas fa-credit-card'></i></td>
+      <td><span id="creditCard_num"></span></td>
+    </table>
+
+    <br><br>
+    
+    <button id="unsubscribeButton" class= "BlueButton">Unsubscribe</button>
+    <button id="editButton" class= "BlueButton">Edit Info</button>
+    <button id="saveButton" class="BlueButton" style="display: none;">Save Edits</button>
+  </div>
+  <!-- <a href="./Member.html" style = "text-align:center; font-size: 20px;"> back </a> -->
+  <br><br>
+  
+  </div>
+</body>
+</html>

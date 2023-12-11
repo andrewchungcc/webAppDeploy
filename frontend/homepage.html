@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Include SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+    
+    <!-- Include jquery -->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="homepage.js"></script>
+    <script>
+        // 讀取id
+        
+        // function storeAndNavigate(targetId) {
+        //     event.preventDefault();
+        //     const targetElement = document.getElementById(targetId);
+        //     const spanText = targetElement.textContent.trim();
+
+        //     console.log('Stored Text:', spanText);
+        //     localStorage.setItem('storedText', spanText);            
+        //     window.location.href = 'introduction.html';
+        // }
+
+    </script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+    integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    >
+    </script>
+    <!--最佳化螢幕寬度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="up">
+        <a href="./homepage.html">
+        <img src="./image/Logo_1.png" class="logo">
+        </a>
+        
+        <div class="up_rihght">
+            <div class="pageicon-container">
+                <span id = "memberID"> Welcome back </span>
+
+                <div class = "pageIcon">
+                <button id="home-btn" class="circle-btn"><i class="fas fa-home"></i></button>
+                <span class="buttonText">Homepage</span>
+                </div>
+
+                <div class = "pageIcon">
+                <button id="favorite-btn" class="circle-btn"><i class="fas fa-heart"></i></button>
+                <span class="buttonText">My Favorite</span>
+                </div>
+
+                <div class = "pageIcon">
+                <button id="user-btn" class="circle-btn"><i class="fas fa-user"></i></button>
+                <span class="buttonText">Member</span>
+                </div>
+
+                <div class = "pageIcon">
+                <button id="logout-btn" class="circle-btn"><i class="fas fa-door-open"></i></button>  
+                <span class="buttonText">Log out</span>
+                </div>       
+
+            </div>
+            <label class="search"><input id = "search-box" type="text" placeholder=" 請輸入書名、作者 "></label>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="hot-reads">
+            <h2 id="headText">Top 10 Hot Reads</h2>
+            <hr class="hr-space-square">    
+            <div class="image-grid">
+
+            </div>
+            
+        </div>
+        <div class="changepage_container">
+            <img src="./image/lastpage.png" class="changepage" id="prev-btn">
+            <img src="./image/nextpage.png" class="changepage" id="next-btn">  
+        </div>
+    </div>
+
+    <div class="content2">    
+        <div class="hot-themes">
+            <h2>Popular Themes</h2>
+            <hr class="hr-space-square"> 
+            <div class="text-grid">               
+                <img id = "生活繪本" src="./image/theme_1.png"  class="themeicon">
+                <img id = "知識繪本" src="./image/theme_2.png"  class="themeicon">
+                <img id = "寓言繪本" src="./image/theme_3.png"  class="themeicon">         
+            </div>
+        </div>
+    </div>
+
+</body>
+<template id="homepage-book-template">
+<div class = "book-container">
+    <div class = "book-div">
+        <a class = "introduction-page">
+        <img class="book-image" alt="Image 1">
+        <span class="book-series" id = ""> <br></span>    
+        </a><br>
+        <span class="author-name"></span><br>
+        <span class = "genre"></span><br>
+        <span class = "times">瀏覽次數：</span>    
+    </div>
+</div>
+</template>
+
+</html>
+
+
+
+
+
+

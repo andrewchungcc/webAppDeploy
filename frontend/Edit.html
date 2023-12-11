@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Edit Info</title>
+    
+    <!-- 加入js -->
+    <!-- <script src="./jquery-1.10.2.min.js"></script> -->
+    <!--<script defer src='./Signup.js'></script>-->
+
+    <!-- Include SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+      integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <!-- 加入Css格式 -->
+    <link rel = "stylesheet" href = "Edit.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <!--最佳化螢幕寬度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    
+</head>
+<body>
+  
+  <div class="up">
+    <a href="./homepage.html">
+    <img src="./image/Logo_2.png" class="logo">
+    </a>
+    
+    <div class="up_right">
+        <div class="pageicon-container">
+          <a href="./homepage_before_login.html">
+            <button class="circle-btn"><i class="fas fa-home"></i></button>
+          </a>
+        </div>
+    </div>
+  </div>
+
+<div class="content">   
+
+  <div class = "editBox">
+    <!-- <hr class="hr-space-square">  -->
+    <p class = "head">Edit Info</p>
+
+    <p> Name </p>
+    <!--<input type="text" id="user_id" autofocus placeholder="">-->
+    <table>
+      <td class="icon"><i class='fas fa-keyboard'></i></td>
+      <td><input type="text" id="user_id" autofocus placeholder=""></td>
+    </table>
+
+    <p> Email </p>
+    <!--<input type="text" id="email" placeholder="">-->
+    <table>
+      <td class="icon"><i class='fas fa-envelope'></i></td>
+      <td><input type="text" id="email" placeholder=""></td>
+    </table>
+
+    <p> Account </p>
+    <!--<input type="text" id="account" placeholder="">-->
+    <table>
+      <td class="icon"><i class='fas fa-user'></i></td>
+      <td><input type="text" id="account" placeholder=""></td>
+    </table>
+
+  
+    <p> Password </p>
+    <!--<input type="password" id="password" />-->
+    <table>
+      <td class="icon"><i class='fas fa-lock'></i></td>
+      <td> <input type="password" id="password" /></td>
+    </table>
+
+    <p> Credit Card Number </p>
+    <!--<input type="text" id="creditCard_num" placeholder="Please enter 16 digits number">-->
+    <table>
+      <td class="icon"><i class='fas fa-credit-card'></i></td>
+      <td><input type="text" id="creditCard_num" placeholder="Please enter 16 digits number"></td>
+    </table>
+
+    <br>
+    <p>
+      <input type = "checkbox" id = "myCheckbox">
+      <label class="checkbox-container" for="myCheckbox"> Subscription Confirmation </label>
+    </p>
+
+    <br><br>
+    <button id="saveButton" class= "BlueButton">Save Edits</button>
+  
+  </div>
+  <a href="./Member.html" style = "text-align:center; font-size: 20px;"> back </a>
+  <br><br>
+  
+  </div>
+
+
+
+</body>
+</html>

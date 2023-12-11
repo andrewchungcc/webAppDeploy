@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="story.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+    
+    <script src="story.js"></script>
+    <title>Story</title>
+</head>
+
+<body>
+    <div class="up">
+        <a href="./homepage.html">
+        <img src="./image/Logo_2.png" class="logo">
+        </a>
+
+        
+        <div class="up_right">
+            <div class="pageicon-container">
+                <button id="home-btn" class="circle-btn"><i class="fas fa-home"></i></button>
+
+                <button id="favorite-btn" class="circle-btn"><i class="fas fa-heart"></i></button>
+                
+                <button id="logout-btn" class="circle-btn"><i class="fas fa-door-open"></i></button> 
+                
+                <button id="introduction-btn" class="circle-btn"><i class="fas fa-arrow-left"></i></button>
+                
+            </div>
+            <!-- <label class="search"><input type="text"></label> -->
+        </div>
+
+    </div>
+    
+    <div class="container">
+        <div class = "story">
+            <div class="page"><img src="./story1/story1.png"  width="1200" height="750"> </div>
+            <div class="page"><img src="./story1/story2.png"  width="1200" height="750"> </div>
+            <div class="page"><img src="./story1/story1.png"  width="1200" height="750"> </div>
+            <div class="page"><img src="./story1/story2.png"  width="1200" height="750"> </div>
+            <div class="page"><img src="./story1/story1.png"  width="1200" height="750"> </div>
+        </div>
+        <div class="changepage_container">
+            <img src="./image/lastpage.png"  class="changepage", id="prev-btn">
+            <img src="./image/nextpage.png" class="changepage" id="next-btn">  
+        </div>
+    </div>
+
+
+<script>
+    $(document).on("mobileinit", function () {
+        $.mobile.autoInitializePage = false;
+    });
+</script>
+</body>
+</html>

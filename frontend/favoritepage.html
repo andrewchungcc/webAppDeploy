@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Include SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+    
+    <link rel="stylesheet" href="favoritepage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="all" onload="this.media='all'"> -->
+
+    <!--最佳化螢幕寬度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="favoritepage.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+    integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    >
+    </script>
+
+    <title>My Favorite</title>
+</head>
+<body>
+    
+  <div class="up">
+    <a href="./homepage.html">
+    <img src="./image/Logo_1.png" class="logo">
+    </a>
+    
+    <div class="up_rihght">
+        <div class="pageicon-container">
+            <button id="home-btn" class="circle-btn"><i class="fas fa-home"></i></button>
+            <button id="user-btn" class="circle-btn"><i class="fas fa-user"></i></button>
+            <button id="logout-btn" class="circle-btn"><i class="fas fa-door-open"></i></button>        
+        </div>
+    </div>
+  </div>
+
+    <div class="content">
+        <div class="hot-reads">
+            <h2 style="text-align: left;">My Favorite</h2>
+            <div class="favorite-book">
+
+                <ul id = "favorite_books" class="text-grid">
+                  <!-- The template place here -->
+                </ul>    
+                
+            </div>           
+        </div>
+    </div>
+
+</body>
+<template id="favorite-book-template">
+  <li class = "farvorite-book-list">
+    <div class="favorite-book">
+      <img class="favorite-image" alt="Image 1"> 
+    </div>
+    <div class="text-box">
+      <div class="text">
+        <p class="bookName"></p>
+      </div>
+      <span class="author-name"></span>
+      <span class = "times"></span> 
+      <div class="button-container">
+        <button class="read-btn"><img src="./image/read.png" alt="Button Image"></button>
+        <button class="delete-btn"><img src="./image/unlike.png" alt="Button Image"></button>
+      </div>
+    </div>
+  </li>
+</template>
+</html>
+
+
+
+
+
+
