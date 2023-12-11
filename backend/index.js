@@ -20,9 +20,9 @@ app.use("/api/members", memberRouter);
 
 app.use("/api/books", bookRouter);
 
-// app.get("/heartbeat", (_, res) => {
-//   return res.send({ message: "Hello World!" });
-// });
+app.get("/heartbeat", (_, res) => {
+  return res.send({ message: "Hello World!" });
+});
 
 const port = process.env.PORT || 8000;
 
